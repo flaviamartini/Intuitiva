@@ -1,4 +1,4 @@
-import { listaUsuarios } from '../actions'
+import { SHOW_USERS } from '../actions'
 
 const initialState = {
     list: []
@@ -7,10 +7,11 @@ const initialState = {
 export function showUsers(state = initialState, action) {
     
     switch (action.type) {
-        case listaUsuarios:
+        case SHOW_USERS:
             return Object.assign({}, state, {list: action.payload})
         default:
             return state 
     }
     
 }
+    

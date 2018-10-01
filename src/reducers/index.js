@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import { listaUsuarios } from './usuarios';
+import { showUsers } from '../actions';
 
 
 const rootReducer = combineReducers({
-  usuarios:listaUsuarios
+  user:showUsers
  
 });
 
